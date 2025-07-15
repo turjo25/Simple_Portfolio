@@ -1,187 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <!-- For front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- icon ( front awesome ) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-         <nav class="navbar">
-        <div class="logo">
-            My Portfolio
+    <!-- nav -->
+    <nav>
+        <div class="left">
+            <a href="#home">
+                <img src="./images/logo.png" alt="logo">
+                <span>Portfolio</span>
+            </a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="right">
+            <a href="#skills" class="active">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#projects">
+                <i class="fa-solid fa-pen"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#contact">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Contact</span>
+            </a>
+        </div>
     </nav>
-    </header>
-
-    <div class="header">
-        <div class="contact-info">
-            <h1>Md. Shardul Rhaman Turjo</h1>
-            <p>Email: turjo23105341263@diu.edu.bd</p>
-            <p>Tel: 01881566366</p>
-        </div>
-        <div class="profile-image">
-            <img src="image.png" alt="myimage">
-        </div>
-    </div>
-
-    <section>
-        <h2>Career Objective</h2>
-        <div class="section-content">
-            <p>I want to be a passionate Software Engineer</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Present Status</h2>
-        <div class="section-content">
-            <p>Completing my B.Sc in Software Engineering</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <table class="education-table">
-            <thead>
-                <tr>
-                    <th>Exam</th>
-                    <th>Board/University</th>
-                    <th>Year</th>
-                    <th>Name of Institution</th>
-                    <th>GPA/CGPA</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>SSC</td>
-                    <td>Dhaka</td>
-                    <td>2018</td>
-                    <td>Faridpur Zilla School</td>
-                    <td>5.00</td>
-                </tr>
-                <tr>
-                    <td>HSC</td>
-                    <td>Dhaka</td>
-                    <td>2020</td>
-                    <td>Govt. Rajendra College, Faridpur</td>
-                    <td>5.00</td>
-                </tr>
-                <tr>
-                    <td>B.Sc</td>
-                    <td>Software Engineering</td>
-                    <td>2025</td>
-                    <td>Daffodil International University</td>
-                    <td>3.86</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section>
-        <h2>Technologies Skills</h2>
-        <div class="section-content">
-            <ul>
-                <li><b>Programming Languages:</b> C, C++, Python, Java, Javascript</li>
-                <li><b>Web Technologies:</b> Node JS, React JS</li>
-                <li><b>Database skills:</b> MySql</li>
-                <li><b>Development Tools:</b> Git</li>
-                <li><b>Operating Systems:</b> Windows, Lynax</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        <div class="section-content">
-            <p>None</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="section-content">
-            <div class="sub-section">
-                <h3>Super Shop Management System</h3>
-                <p>A simple console project in C.</p>
-                <br>
-                <h3>Contact Management System</h3>
-                <p>A simple console project in Python.</p>
-                <br>
-                <h3>Library Management System</h3>
-                <p>This project Language is HTML,CSS,PHP.</p>
+    <!-- main section -->
+    <main>
+        <!-- hero section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Md. Shardul Rahman Turjo</span></h1>
+                <h3>Welcome to My Portfolio</h3>
+                <p>
+                    Hello! I’m a Software Engineering student who genuinely loves to code. From writing my first “Hello,
+                    World!” to building real-world projects, I’ve always been fascinated by how software shapes the
+                    world. I’m passionate about learning new technologies and building solutions that matter.
+                </p>
+                <div class="links">
+                    <a href="http://github.com/turjo25" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/srturjo25" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/turjo_rahman31" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="http://facebook.com/turzo.556" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Achievements</h2>
-        <div class="section-content">
-            <ul>
-                <li>No achievements yet</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Language Skills</h2>
-        <div class="section-content">
-            <ul>
-                <li>Bengali</li>
-                <li>English</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section>
-        <h2>Personal Information</h2>
-        <div class="section-content personal-info-grid">
-            <dl>
-                <dt>Full Name</dt><dd>: Md. Shardul Rhaman Turjo</dd>
-                <dt>Father's Name</dt><dd>: Md. Azad Rhaman</dd>
-                <dt>Mother's Name</dt><dd>: Mst. Shanta Rhaman</dd>
-                <dt>Date of Birth</dt><dd>: 25/09/2003</dd>
-                <dt>Nationality</dt><dd>: Bangladeshi</dd>
-                <dt>Religion</dt><dd>: Islam</dd>
-                <dt>Gender</dt><dd>: Male</dd>
-            </dl>
-        </div>
-    </section>
-
-    <section>
-        <h2>Hobbies</h2>
-        <div class="section-content">
-            <ul>
-                <li>Playing and Watching Football</li>
-                <li>Programming/Problem Solving</li>
-            </ul>
-        </div>
-    </section>
-  
-    <footer class="footer">
-    <p>&copy; 2025 Md. Shardul Rhaman Turjo</p>
-    <p>Contact: turjo23105341263@diu.edu.bd | Tel: 01881566366</p>
-     <p>Get in Touch</p>
-    <div class="social-icons">
-        <a href="www.linkedin.com/in/md-shardul-rahman-turjo-a90350263">
-            <img src="linkdin.png" alt="linkdin">
-        </a>
-        
-        <a href="https://github.com/turjo25">
-            <img src="GitHub.png" alt="github">
-        </a>
-        
-        <a href="turjo2305341263@diu.edu.bd">
-            <img src="gmail.jpg" alt="gmail">
-        </a>
-    </div>
-    </footer>
+            <div class="headshot">
+                <img src="images/image.png" alt="hero image">
+            </div>
+        </section>
 
 
+        <!-- Projects Section  -->
+        <section id="projects" class="project-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>Hospital Management System</h3>
+                    <p>This project is based on a simple hospital management in C language. This is a console project
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-shop"></i>
+                    <h3>Supershop Management System</h3>
+                    <p>This project is based on a simple Supershop management in C language. This is a console project
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <h3>QR Code Generator</h3>
+                    <p>This project is based on Python. It generates QR codes from text or links using Python libraries.
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>Library Management System</h3>
+                    <p>This is a full library management system built with HTML, CSS, and PHP.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills section -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Here are some of the key technologies and tools I use to bring projects to life:
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/cpp.png" alt="html logo">
+                    <span>C++</span>
+                </div>
+                <div class="cell">
+                    <img src="images/python.png" alt="html logo">
+                    <span>Python</span>
+                </div>
+                <div class="cell">
+                    <img src="images/html-logo.png" alt="html logo">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="images/css-logo.png" alt="css logo">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="images/javascript-logo.png" alt="js logo">
+                    <span>JavaScript</span>
+                </div>
+                <div class="cell">
+                    <img src="images/react-logo.png" alt="react logo">
+                    <span>ReactJS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">
+                    Got a project idea, collaboration, or just want to say hi? I'd love to hear from you. Fill out the
+                    form or connect with me on social media!
+                </div>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 All Rights Reserved</p>
+        </footer>
+    </main>
 </body>
+
 </html>
